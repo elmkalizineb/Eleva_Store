@@ -318,7 +318,7 @@ input {
   color: var(--first-color);
 }
 /*=============== CATEGORIES ===============*/
-.categories{
+.categories {
   overflow: hidden;
 }
 .category__item {
@@ -338,19 +338,19 @@ input {
 }
 
 /* Swiper class */
-.swiper{
+.swiper {
   overflow: hidden;
 }
 .swiper-button-next::after,
-.swiper-button-prev::after{
-  content: '';
+.swiper-button-prev::after {
+  content: "";
 }
 .swiper-button-next,
 .swiper-button-prev {
   /* display: none; */
   top: 1.875rem;
   background-color: var(--first-color-alt);
-  border: 1px solid  var(--border-color);
+  border: 1px solid var(--border-color);
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -358,18 +358,64 @@ input {
   font-size: var(--tiny-font-size);
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
   left: initial;
   right: 2.5rem;
 }
 
-.swiper-button-next{
+.swiper-button-next {
   right: 0;
 }
 /*=============== PRODUCTS ===============*/
+.tab__btns {
+  display: flex;
+  column-gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.tab__btn {
+  background-color: var(--container-color);
+  color: var(--title-color);
+  padding: 1rem 1.25rem 0.875rem;
+  border-radius: 0.25rem;
+  font-family: var(--second-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-600);
+  cursor: pointer;
+}
+
+.products__container {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.product__item {
+  border: 1px solid var(--border-color);
+  border-radius: 1.5rem;
+}
+.product__banner {
+  padding: 0.625rem 0.75rem 0.75rem;
+}
+
+.product__images {
+  position: relative;
+}
+
+.product__images {
+  display: block;
+}
+.product__img.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 /* Active Tab */
-
+.tab__btn.active-tab {
+  color: var(--first-color);
+  background-color: var(--second-color);
+}
+.tab__item:not(.active-tab) {
+  display: none;
+}
 /* Product Hover */
 
 /*=============== DEALS ===============*/
