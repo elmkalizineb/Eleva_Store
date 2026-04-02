@@ -35,3 +35,11 @@ var swiperCategories = new Swiper('.categories__container', {
 /*=============== SWIPER PRODUCTS ===============*/
 
 /*=============== PRODUCTS TABS ===============*/
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContent = document.querySelectorAll('[content]');
+
+    tabs.forEach((tab) =>{
+        tab.addEventListener('click',()=>{
+            
+        })
+    })
