@@ -679,6 +679,10 @@ input {
   color: var(--first-color);
 }
 /*=============== NEW ARRIVALS ===============*/
+.new__arrivals{
+  overflow: hidden;
+}
+
 
 /*=============== SHOWCASE ===============*/
 
