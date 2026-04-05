@@ -857,6 +857,19 @@ input {
   font-size: var(--small-font-size);
 }
 /*=============== BREADCRUMBS ===============*/
+.breadcrumb{
+  background-color: var(--container-color);
+  padding-block: 1.5rem;
+}
+
+.breadcrumb__list{
+  column-gap: .75rem;
+}
+
+.breadcrumb__link{
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+}
 
 /*=============== SHOP ===============*/
 
