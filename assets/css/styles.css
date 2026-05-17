@@ -111,6 +111,11 @@ input {
   border: none;
   outline: none;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   /* background-color: var(--first-color); */
@@ -1026,7 +1031,7 @@ input {
 }
 
 .quantity,
-.details__action_btn{
+.details__action_btn {
   border: 1px solid var(--border-color-alt);
   font-size: var(--small-font-size);
 }
@@ -1038,19 +1043,103 @@ input {
   border-radius: 0.25rem;
 }
 
-.details__action_btn{
+.details__action_btn {
   color: var(--text-color);
   line-height: 40px;
   padding: 0.5rem;
 }
 
-.details__meta{
+.details__meta {
   border-top: 1px solid var(--border-color-alt);
   margin-top: 2.5rem;
-  padding-top:1rem;
+  padding-top: 1rem;
+}
+/*=============== DETAILS INFO & REVIEWS ===============*/
+.details__tabs {
+  display: flex;
+  column-gap: 1.75rem;
+  margin-bottom: 3rem;
 }
 
-/*=============== DETAILS INFO & REVIEWS ===============*/
+.details__tab {
+  font-family: var(--second-font);
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-600);
+  cursor: pointer;
+}
+
+.details__tab.active-tab {
+  color: var(--first-color);
+}
+
+.detail__tab-content:not(.active-tab) {
+  display: none;
+}
+
+.info__table tr th,
+.info__table tr td {
+  border: 1px solid var(--border-color-alt);
+  padding: 0.625rem 1.25rem;
+}
+
+.info__table tr th {
+  font-weight: var(--weight-500);
+  text-align: left;
+}
+
+.info__table tr td {
+  color: var(--text-color-light);
+}
+
+.reviews__container {
+  padding-bottom: 3rem;
+  row-gap: 1.25rem;
+}
+
+.review__single {
+  border-bottom: 1px solid var(--border-color-alt);
+  padding-bottom: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1.5rem;
+}
+
+.review__img {
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.review__title {
+  font-size: var(--tiny-font-size);
+}
+
+.review__data {
+  width: calc(100% - 94px);
+}
+
+.review__description {
+  margin-bottom: 0.5rem;
+}
+
+.review__rating {
+  color: hsl(42, 100%, 50%);
+  margin-bottom: 0.25rem;
+}
+
+.review__rating,
+.review__date {
+  font-size: var(--small-font-size);
+}
+
+.review__form-title{
+  font-size: var(--large-font-size);
+  margin-bottom: 1rem;
+}
+
+.rate_product{
+  
+}
 
 /*=============== CART ===============*/
 
