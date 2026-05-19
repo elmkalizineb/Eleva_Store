@@ -171,6 +171,20 @@ table {
   text-decoration: line-through;
 }
 
+.form{
+  row-gap: 1rem;
+}
+
+.form__group{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; 
+}
+
+.textarea{
+  height: 200px;
+  padding-block: 1rem;
+  resize: none;
+}
 /*=============== HEADER & NAV ===============*/
 .header__top {
   background-color: var(--first-color-alt);
@@ -1138,7 +1152,7 @@ table {
 }
 
 .rate_product{
-  
+  margin-bottom: 2rem;
 }
 
 /*=============== CART ===============*/
