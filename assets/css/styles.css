@@ -1252,6 +1252,10 @@ table {
   position: relative;
   z-index: 10;
 }
+.cart__group{
+  grid-template-columns:repeat(2, 1fr);
+  align-items: flex-start;
+}
 .cart__shipping .section__title,
 .cart__coupon .section__title,
 .cart__total .section__title {
