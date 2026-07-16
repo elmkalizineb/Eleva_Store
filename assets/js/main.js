@@ -8,7 +8,7 @@
 
 /*=============== IMAGE GALLERY ===============*/
 function imgGallery(){
-    const mainImg = document.querySelector('.details__img'),
+    const mainImg = documenta.querySelector('.details__img'),
     smallImg = document.querySelectorAll('.details__small-img');
 
     smallImg.forEach((img) =>{
